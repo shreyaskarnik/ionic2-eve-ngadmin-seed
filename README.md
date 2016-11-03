@@ -20,7 +20,7 @@ Bring up Stack
 
 First make sure you've installed docker-compose.
 
-Run `make up-dev` to bring up the full dev stack. 
+Run `make up-dev` to bring up the full dev stack.
 
 After your stack is running
 ---------------------------
