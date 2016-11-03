@@ -16,8 +16,8 @@
 8 silly mapToRegistry uri https://registry.npmjs.org/ng-admin
 9 verbose request uri https://registry.npmjs.org/ng-admin
 10 verbose request no auth needed
-11 info attempt registry request try #1 at 9:27:21 PM
-12 verbose request id 4d669e1abb6c7797
+11 info attempt registry request try #1 at 9:55:26 PM
+12 verbose request id 193c73211d30bcf9
 13 http request GET https://registry.npmjs.org/ng-admin
 14 http 200 https://registry.npmjs.org/ng-admin
 15 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
@@ -27,14 +27,14 @@
 15 verbose headers   'cache-control': 'max-age=300',
 15 verbose headers   'content-length': '10037',
 15 verbose headers   'accept-ranges': 'bytes',
-15 verbose headers   date: 'Thu, 03 Nov 2016 21:27:21 GMT',
+15 verbose headers   date: 'Thu, 03 Nov 2016 21:55:26 GMT',
 15 verbose headers   via: '1.1 varnish',
-15 verbose headers   age: '0',
+15 verbose headers   age: '256',
 15 verbose headers   connection: 'keep-alive',
-15 verbose headers   'x-served-by': 'cache-dfw1835-DFW',
-15 verbose headers   'x-cache': 'MISS',
-15 verbose headers   'x-cache-hits': '0',
-15 verbose headers   'x-timer': 'S1478208441.902148,VS0,VE62',
+15 verbose headers   'x-served-by': 'cache-dfw1823-DFW',
+15 verbose headers   'x-cache': 'HIT',
+15 verbose headers   'x-cache-hits': '1',
+15 verbose headers   'x-timer': 'S1478210126.786697,VS0,VE0',
 15 verbose headers   vary: 'Accept-Encoding' }
 16 silly get cb [ 200,
 16 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
@@ -44,14 +44,14 @@
 16 silly get     'cache-control': 'max-age=300',
 16 silly get     'content-length': '10037',
 16 silly get     'accept-ranges': 'bytes',
-16 silly get     date: 'Thu, 03 Nov 2016 21:27:21 GMT',
+16 silly get     date: 'Thu, 03 Nov 2016 21:55:26 GMT',
 16 silly get     via: '1.1 varnish',
-16 silly get     age: '0',
+16 silly get     age: '256',
 16 silly get     connection: 'keep-alive',
-16 silly get     'x-served-by': 'cache-dfw1835-DFW',
-16 silly get     'x-cache': 'MISS',
-16 silly get     'x-cache-hits': '0',
-16 silly get     'x-timer': 'S1478208441.902148,VS0,VE62',
+16 silly get     'x-served-by': 'cache-dfw1823-DFW',
+16 silly get     'x-cache': 'HIT',
+16 silly get     'x-cache-hits': '1',
+16 silly get     'x-timer': 'S1478210126.786697,VS0,VE0',
 16 silly get     vary: 'Accept-Encoding' } ]
 17 verbose get saving ng-admin to /root/.npm/registry.npmjs.org/ng-admin/.cache.json
 18 verbose correctMkdir /root/.npm correctMkdir not in flight; initializing

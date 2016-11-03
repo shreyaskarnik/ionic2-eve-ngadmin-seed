@@ -3,7 +3,7 @@
   <name>SeedProject</name>
   <description>An Ionic Framework and Cordova project.</description>
   <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
-  <content src="index.html"/>
+  <content src="http://172.16.239.8:8100" original-src="index.html"/>
   <access origin="*"/>
   <allow-intent href="http://*/*"/>
   <allow-intent href="https://*/*"/>
