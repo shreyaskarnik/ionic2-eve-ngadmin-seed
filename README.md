@@ -29,6 +29,7 @@ When you're stack is up and running:
 
 Run `make print-endpoints` to output the API and Admin endpoints on your local machine
 
+
 Run `make enter-container container=<docker-compose container name>` to bash into the running container. For example:
 
 `make enter-container container=api`
