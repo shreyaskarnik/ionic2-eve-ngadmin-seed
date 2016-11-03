@@ -3,11 +3,27 @@
 
 node_modules/
 
-mobile-client/www/build/
-mobile-client/platforms/
-mobile-client/plugins/
-mobile-client/.gradle
-mobile-client/app/environment.ts
+*/node_modules
+*/www/
+*/platforms/
+*/resources/android
+*/resources/ios
+*/resources/wp8
+*/plugins/
+*/.gradle
+*/src/app/environment.ts
+*/.sass-cache/
+*/dist/
+*/.versions/
+*/coverage/
+*/tmp/
+*/temp/
+*/hooks/
+*/platforms/
+*/plugins/
+*/plugins/android.json
+*/plugins/ios.json
+
 *.swp
 .DS_Store
 Thumbs.db

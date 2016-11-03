@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
+FROM ubuntu:latest
 
 ENV DEBIAN_FRONTEND noninteractive
 
@@ -35,6 +35,9 @@ RUN echo "y" | android update sdk -u -a --filter android-23 && \
     echo "y" | android update sdk -u -a --filter build-tools-23.0.3 && \
     echo "y" | android update sdk -u -a --filter sys-img-x86-android-23
 
+RUN echo "y" | android update sdk -u -a --filter android-24 && \
+    echo "y" | android update sdk -u -a --filter build-tools-24.0.3 && \
+
 RUN echo "y" | android update sdk -u -a --filter platform-tools-preview && \
     echo "y" | android update sdk -u -a --filter build-tools-24.0.0-preview
 
@@ -44,17 +47,15 @@ RUN echo "y" | android update sdk -u -a --filter extra-android-support && \
     echo "y" | android update sdk -u -a --filter extra-google-m2repository && \
     echo "y" | android update sdk -u -a --filter extra-google-analytics_sdk_v2
 
-RUN apt-get update && apt-get install -y --no-install-recommends lib32z1 lib32ncurses5 lib32bz2-1.0 lib32stdc++6 && \
-    apt-get clean && \
-    rm -rf /var/lib/apt/lists/*
-
 RUN echo "no" | android create avd --force -n demo -t "android-23"
 
 RUN curl -sL https://deb.nodesource.com/setup_6.x | bash -
 RUN apt-get install -y nodejs
 
-RUN npm install -g ionic@beta
+RUN npm install -g ionic
 RUN npm install -g cordova
+RUN cordova telemetry on && cordova telemetry off
+#https://github.com/driftyco/ionic-cli/issues/859
 
 COPY bashrc /etc/bash.bashrc
 COPY config.ini /root/.android/avd/demo.avd/config.ini
