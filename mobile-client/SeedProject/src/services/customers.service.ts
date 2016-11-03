@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
-import { Http, Response, URLSearchParams, Headers, RequestOptions } from '@angular/http';
+import { Http, Response, Headers } from '@angular/http';
 
-import {Observable} from 'rxjs/Observable';
+import { Observable } from 'rxjs/Observable';
 import 'rxjs/Rx';
 
-import {environment} from '../environment';
+import { environment } from '../app/environment';
 
 @Injectable()
 export class CustomersService {
