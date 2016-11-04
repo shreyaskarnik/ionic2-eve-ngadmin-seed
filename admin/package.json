@@ -1,5 +1,5 @@
 {
-  "name": "ng-admin-seed",
+  "name": "ng-admin",
   "version": "1.0.0",
   "description": "Admin site for API",
   "main": "app.js",
@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "ng-admin": "^1.0.0-alpha2"
+    "ng-admin": "1.0.0-alpha5",
   }
 }
